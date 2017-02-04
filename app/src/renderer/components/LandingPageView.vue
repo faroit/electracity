@@ -6,7 +6,7 @@
     </ul>
   </div>
   <div class="container">
-    <div v-if="data.length > 0">
+    <div v-if="true">
       <player :urls="data"></player>
     </div>
     <div v-else class="nav" id="logo">
@@ -63,6 +63,9 @@
 </script>
 
 <style scoped>
+  body {
+    margin:0;
+  }
   img {
     margin-top: -25px;
     width: 450px;

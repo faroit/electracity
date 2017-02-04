@@ -12,7 +12,36 @@
             v-bind:class="{ 'is-disabled': isLoading }"
             v-on:click='stop'><span class="fa fa-stop"></span></a>
         </span>
+        </div>
+        <div class="column is-narrow">
+        <p class="control has-addons">
+          <a class="button">
+            <span class="icon is-small">
+              <i class="fa fa-step-backward"></i>
+            </span>
+          </a>
+          <a class="button">
+            <span class="icon is-small">
+              <i class="fa fa-step-forward"></i>
+            </span>
+          </a>
+        </p>
       </div>
+      <div class="column is-narrow">
+      <p class="control has-addons">
+        <a class="button">
+          <span class="icon is-small">
+            <i class="fa fa-search-plus"></i>
+          </span>
+        </a>
+        <a class="button">
+          <span class="icon is-small">
+            <i class="fa fa-search-minus"></i>
+          </span>
+        </a>
+      </p>
+    </div>
+
     </div>
     <transition name="slide-fade">
       <div id="playlist"
