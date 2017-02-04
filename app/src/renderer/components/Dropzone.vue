@@ -11,7 +11,7 @@
               <img src="./assets/electracity.png" />
               <span class="dropzone-title">Click to open, or drop your audio files here</span>
           </div>
-          <input type="file" @change="onFileChange">
+          <input type="file" @change="onFileChange" multiple>
       </div>
   </div>
 </div>
