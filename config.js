@@ -5,7 +5,7 @@ const path = require('path')
 let config = {
   // Name of electron app
   // Will be used in production builds
-  name: 'vuelectron-playlist',
+  name: 'electracity',
 
   // webpack-dev-server port
   port: 9080,
@@ -20,7 +20,7 @@ let config = {
     ignore: /\b(src|index\.ejs|icons)\b/,
     out: path.join(__dirname, 'builds'),
     overwrite: true,
-    platform: process.env.PLATFORM_TARGET || 'all'
+    platform: 'darwin'
   }
 }
 

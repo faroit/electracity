@@ -1,14 +1,21 @@
 <template>
-  <div>
-  <div class="tabs is-right">
+  <div class="container">
+  <div class="tabs">
     <ul>
-        <input type="file" id='input' @change="addfile" multiple>
+        <input type="file" name="file" id='input' @change="addfile" multiple>
     </ul>
   </div>
   <div class="container">
     <div v-if="data.length > 0">
       <player :urls="data"></player>
-     </div>
+    </div>
+    <div v-else class="nav" id="logo">
+      <figure class="image is-128x128">
+        <img src="./LandingPageView/assets/electracity.png">
+      </figure>
+      <h1 class="title is-3">Electracity</h1>
+    </div>
+
   </div>
   </div>
 </template>
@@ -64,5 +71,11 @@
   #input {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  #logo {
+    margin-left: 30em;
+    margin-top: 10em;
+    text-align: center;
   }
 </style>
