@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "bulma": "^0.3.1",
+    "dropzone": "^4.3.0",
     "font-awesome": "^4.7.0",
     "mousetrap": "^1.6.0",
     "vue-spinner": "^1.0.2",

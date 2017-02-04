@@ -1,33 +1,23 @@
 <template>
   <div class="container">
-  <div class="tabs">
-    <ul>
-        <input type="file" name="file" id='input' @change="addfile" multiple>
-    </ul>
-  </div>
+    <dropzone help="Specific requirements for this dropzone"></dropzone>
   <div class="container">
     <div v-if="data.length > 0">
       <player :urls="data"></player>
     </div>
-    <div v-else class="nav" id="logo">
-      <figure class="image is-128x128">
-        <img src="./assets/electracity.png">
-      </figure>
-      <h1 class="title is-3">Electracity</h1>
-    </div>
-
   </div>
   </div>
 </template>
 
 <script>
   import Player from './Player.vue'
+  import Dropzone from './Dropzone.vue'
   import fontawesome from 'font-awesome/css/font-awesome.min.css'
   import fs from 'fs'
 
   export default {
     components: {
-      Player
+      Player, Dropzone
     },
     data: function () {
       return {
