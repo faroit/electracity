@@ -55,7 +55,6 @@
     "font-awesome": "^4.7.0",
     "mousetrap": "^1.6.0",
     "vue-spinner": "^1.0.2",
-    "vue2-dropzone": "^2.1.4",
     "waveform-playlist": "^2.9.0"
   }
 }
