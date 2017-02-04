@@ -6,7 +6,7 @@
     </ul>
   </div>
   <div class="container">
-    <div v-if="true">
+    <div v-if="data.length > 0">
       <player :urls="data"></player>
     </div>
     <div v-else class="nav" id="logo">
