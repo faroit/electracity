@@ -11,7 +11,7 @@
     </div>
     <div v-else class="nav" id="logo">
       <figure class="image is-128x128">
-        <img src="./LandingPageView/assets/electracity.png">
+        <img src="./assets/electracity.png">
       </figure>
       <h1 class="title is-3">Electracity</h1>
     </div>
