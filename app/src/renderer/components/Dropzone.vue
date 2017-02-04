@@ -31,6 +31,7 @@ export default {
       onFileChange(e) {
           var files = e.target.files || e.dataTransfer.files;
           if (!files.length) return;
+          this.$emit('addfiles', files)
       },
   }
 }

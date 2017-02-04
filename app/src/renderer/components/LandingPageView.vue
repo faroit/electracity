@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <dropzone help="Specific requirements for this dropzone"></dropzone>
+  <dropzone v-if="data.length == 0" v-on:addfiles="addfiles"></dropzone>
   <div class="container">
     <div v-if="data.length > 0">
       <player :urls="data"></player>
@@ -13,7 +13,6 @@
   import Player from './Player.vue'
   import Dropzone from './Dropzone.vue'
   import fontawesome from 'font-awesome/css/font-awesome.min.css'
-  import fs from 'fs'
 
   export default {
     components: {
@@ -29,11 +28,10 @@
       showSuccess: function (file) {
         console.log('A file was successfully uploaded')
       },
-      addfile(e) {
-
+      addfiles: function(e) {
         var trackstoload = []
 
-        for (let s of e.target.files) {
+        for (let s of e) {
           console.log(s)
           trackstoload.push(
             {
