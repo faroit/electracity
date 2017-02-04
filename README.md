@@ -1,6 +1,8 @@
 # Electracity
 
-Cross-Platform Multitrack Audio Player based on Electron
+Cross-Platform Multitrack Audio Player based on Electron. 
+
+Essentially this is just [waveform-playlist](https://github.com/naomiaro/waveform-playlist) mounted into [Electron](http://electron.atom.io) using [vue.js](https://vuejs.org).
 
 ## Build Setup
 
